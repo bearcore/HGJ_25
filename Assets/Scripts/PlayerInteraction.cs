@@ -31,7 +31,10 @@ public class PlayerInteraction : MonoBehaviour
         if(lastHitInteractable == null)
         {
             if(LastHitInteractable != null)
+            {
+                LastHitInteractable.OnHoverEnded.Invoke();
                 interactionHintUI.Hide();
+            }
             LastHitInteractable = null;
         }
 
@@ -39,6 +42,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             LastHitInteractable = lastHitInteractable;
             interactionHintUI.Show(lastHitInteractable.UseText);
+            LastHitInteractable.OnHoverStated.Invoke();
         }
 
         if(LastHitInteractable != null)
