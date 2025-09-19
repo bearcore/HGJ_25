@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -6,16 +7,22 @@ public class PlayerInteraction : MonoBehaviour
     public Interactable LastHitInteractable;
     public InteractionHintUI interactionHintUI;
 
+    private InputAction _useAction;
+    private Camera _mainCamera;
+
     private void Start()
     {
+        _mainCamera = Camera.main;
         interactionHintUI = Instantiate(Resources.Load<GameObject>("InteractableHintUI")).GetComponent<InteractionHintUI>();
+        _useAction = InputSystem.actions.FindAction("Interact");
+        _useAction.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
         var lastHitInteractable = null as Interactable;
-        var hits = Physics.RaycastAll(transform.position, transform.forward, InteractionDistance);
+        var hits = Physics.RaycastAll(_mainCamera.transform.position, _mainCamera.transform.forward, InteractionDistance);
         foreach (var hit in hits)
         {
             lastHitInteractable = hit.collider.GetComponentInChildren<Interactable>();
@@ -36,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if(LastHitInteractable != null)
         {
-            if (Input.GetKeyDown("E"))
+            if (_useAction.WasPerformedThisFrame())
             {
                 LastHitInteractable.OnUsed.Invoke();
             }
