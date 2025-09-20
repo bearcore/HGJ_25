@@ -54,15 +54,6 @@ public class SpectrumBarsUI : MaskableGraphic
         var success = ReadFmodFrequency.TryGetAveragedSpectrum(out var spectrum);
         SetSpectrum(spectrum);
 
-        /*if(spectrum != null)
-        {
-            Debug.Log(spectrum.Length);
-            for (int i = 0; i < spectrum.Length; i++)
-            {
-                //Debug.Log(spectrum[i]);
-            }
-        }*/
-
         if (_dirtyData && _fft != null)
         {
             UpdateBars(_fft);

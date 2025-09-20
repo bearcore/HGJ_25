@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a4065ad3-055b-418d-bcab-8ece4f4e7017}">
+		<property name="assetPath">
+			<value>SFX/Signals_FP_Stone_10.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45188208616780046</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{961137f2-04d6-4362-b98d-d0c88693a2e8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9999052a-dffd-4169-8be9-955643686697}">
+		<property name="assetPath">
+			<value>SFX/Signals_FP_Snow_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.8019727891156463</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{961137f2-04d6-4362-b98d-d0c88693a2e8}</destination>
+		</relationship>
+	</object>
+</objects>

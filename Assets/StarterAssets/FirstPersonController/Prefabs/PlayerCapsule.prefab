@@ -80,7 +80,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5393215578589016642}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 5420857361349278248}
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 7716970516895477443}
+  - component: {fileID: 1309896712381467317}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -386,3 +387,25 @@ MonoBehaviour:
   InteractionDistance: 2
   LastHitInteractable: {fileID: 0}
   interactionHintUI: {fileID: 0}
+--- !u!114 &1309896712381467317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42efb15ed62bf486bb2b6b27aae1892d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SnowSound
+  SnowSoundFmod:
+    Guid:
+      Data1: 1088697823
+      Data2: 1270033735
+      Data3: 938450593
+      Data4: -388425585
+    Path: event:/Blizzard
+  InsideColliders:
+  - {fileID: 0}
+  InsideCount: 0

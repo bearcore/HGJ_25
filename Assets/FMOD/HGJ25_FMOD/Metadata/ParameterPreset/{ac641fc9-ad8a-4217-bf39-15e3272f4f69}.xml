@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ac641fc9-ad8a-4217-bf39-15e3272f4f69}">
+		<property name="name">
+			<value>Blizzard Type</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fd0c6b0e-ab43-4ad5-9fec-178226810021}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{bd7453f4-0f37-404c-b22f-f6f2f9948f0e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{bd7453f4-0f37-404c-b22f-f6f2f9948f0e}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.69999998807907104</value>
+		</property>
+	</object>
+</objects>

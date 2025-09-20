@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{00151ea1-5030-4de8-92d6-d8a82425335f}">
+		<property name="assetPath">
+			<value>VA/Signals_Radio_Voice_Nato_2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>79.194580498866216</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{961137f2-04d6-4362-b98d-d0c88693a2e8}</destination>
+		</relationship>
+	</object>
+</objects>

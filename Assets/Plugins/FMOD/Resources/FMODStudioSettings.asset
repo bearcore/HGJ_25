@@ -307,8 +307,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/GGJ25-Witches/GGJ25-Witches.fspro
-  sourceBankPath: Assets/GGJ25-Witches/Build
+  sourceProjectPath: Assets/FMOD/HGJ25_FMOD/HGJ25_FMOD.fspro
+  sourceBankPath: Assets/FMOD/HGJ25_FMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -332,8 +332,9 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - MUSIC
+  - Musik
   - SFX
+  - VA
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
