@@ -93,10 +93,10 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638939856898066004
+  lastModified: 638939894007003556
   FileSizes:
   - Name: Desktop
-    Value: 1390
+    Value: 1442
   Exists: 1
 --- !u!114 &-3495663590577254214
 MonoBehaviour:
@@ -137,7 +137,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638939856898051163
+  lastModified: 638939894006990846
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -197,6 +197,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2262835326788676036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VA Alphabet
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/VA Alphabet
+  Guid:
+    Data1: -761288677
+    Data2: 1114163134
+    Data3: -2144734807
+    Data4: 133860572
+  Banks:
+  - {fileID: 7540095231169722867}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2431968386924735738}
+  - {fileID: -1776618396659243272}
+  - {fileID: 6527724764596492216}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 64500
+--- !u!114 &-1776618396659243272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VA Alphabet/VANumber
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: VANumber
+  StudioPath: 
+  Min: 0
+  Max: 30
+  Default: 0
+  ID:
+    data1: 189828518
+    data2: 3287336222
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-996575823570180277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,12 +304,13 @@ MonoBehaviour:
   - {fileID: -4433695680846443488}
   - {fileID: -996575823570180277}
   - {fileID: -8428277052654868733}
+  - {fileID: -2262835326788676036}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3233765998444635923}
   StringsBanks:
   - {fileID: -3803964580254505436}
-  cacheTime: 638939880534797524
+  cacheTime: 638939894016387879
   cacheVersion: 131632
 --- !u!114 &275241915379697189
 MonoBehaviour:
@@ -344,11 +399,35 @@ MonoBehaviour:
   Name: VANumber
   StudioPath: 
   Min: 0
-  Max: 9
+  Max: 30
   Default: 0
   ID:
     data1: 189828518
     data2: 3287336222
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2431968386924735738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VA Alphabet/VAType
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: VAType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2640125675
+    data2: 2317882779
   Type: 1
   IsGlobal: 0
   Labels: []
@@ -405,6 +484,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6527724764596492216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VA Alphabet/VA
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: VA
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 4071504190
+    data2: 3095961042
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6884758077676994440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +523,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638939880534797524
+  lastModified: 638939882949444200
   FileSizes:
   - Name: Desktop
     Value: 1603328
@@ -464,8 +567,8 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/VA.bank
   Name: VA
   StudioPath: bank:/VA
-  lastModified: 638939856949846594
+  lastModified: 638939894016387879
   FileSizes:
   - Name: Desktop
-    Value: 216704
+    Value: 782912
   Exists: 1
