@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{9c5676c9-9c88-47b8-aad1-faf810022d96}">
+		<property name="name">
+			<value>VANumber</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fd0c6b0e-ab43-4ad5-9fec-178226810021}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{44a0610c-24fc-4963-938a-a609d508963d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{44a0610c-24fc-4963-938a-a609d508963d}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

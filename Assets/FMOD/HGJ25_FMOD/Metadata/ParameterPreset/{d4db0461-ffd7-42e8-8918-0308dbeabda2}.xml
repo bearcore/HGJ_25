@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{d4db0461-ffd7-42e8-8918-0308dbeabda2}">
+		<property name="name">
+			<value>Radio Whitenoise</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fd0c6b0e-ab43-4ad5-9fec-178226810021}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{6aaadcc6-c543-442a-9da9-9ad73f973234}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{6aaadcc6-c543-442a-9da9-9ad73f973234}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

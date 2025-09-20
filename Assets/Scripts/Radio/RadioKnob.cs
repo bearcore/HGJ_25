@@ -34,7 +34,7 @@ public class RadioKnob : MonoBehaviour
 
         var look = _lookAction.ReadValue<Vector2>();
         Debug.Log(look.y);
-        transform.localEulerAngles = transform.localEulerAngles + new Vector3(0f, 0f, -look.y * RotationStrength);
+        transform.localEulerAngles = transform.localEulerAngles + new Vector3(0f, 0f, -look.y * RotationStrength * 3f);
         CurrentRotation = transform.eulerAngles.z;
 
         CurrentFrequency += -look.y * RotationStrength;

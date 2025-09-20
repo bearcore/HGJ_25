@@ -25,7 +25,9 @@ public class PlayerInteraction : MonoBehaviour
         var hits = Physics.RaycastAll(_mainCamera.transform.position, _mainCamera.transform.forward, InteractionDistance);
         foreach (var hit in hits)
         {
-            lastHitInteractable = hit.collider.GetComponentInChildren<Interactable>();
+            var interactable = hit.collider.GetComponentInChildren<Interactable>();
+            if(interactable != null)
+                lastHitInteractable = interactable;
         }
 
         if(lastHitInteractable == null)

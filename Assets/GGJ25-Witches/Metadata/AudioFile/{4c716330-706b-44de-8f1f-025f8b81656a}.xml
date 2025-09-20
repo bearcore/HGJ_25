@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4c716330-706b-44de-8f1f-025f8b81656a}">
+		<property name="assetPath">
+			<value>MONO-001.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>23.71482993197279</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2fb9163b-80f4-473a-b617-210525702d5a}</destination>
+		</relationship>
+	</object>
+</objects>
