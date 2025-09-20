@@ -17,6 +17,7 @@ public class TurnableAntenna : MonoBehaviour
     private void OnUsed()
     {
         transform.eulerAngles = transform.eulerAngles + new Vector3(0f, RotationPerPress);
+        IsInCorrectRotation = Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.y, CorrectAngle)) < 25f;
     }
 
     // Update is called once per frame
