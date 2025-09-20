@@ -25,12 +25,11 @@ Transform:
   m_GameObject: {fileID: 1513005451522660990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36884, y: 2.61415, z: 4.70622}
+  m_LocalPosition: {x: 0, y: 1.23, z: 3.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 492295825338310888}
-  - {fileID: 1865869905135940679}
+  - {fileID: 6309416417660396656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562328104407606993
@@ -46,6 +45,7 @@ GameObject:
   - component: {fileID: 3466426045038001093}
   - component: {fileID: 6919391369619117494}
   - component: {fileID: 2395641672866117721}
+  - component: {fileID: 6494699550275181967}
   m_Layer: 0
   m_Name: Key_8
   m_TagString: Untagged
@@ -62,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 1562328104407606993}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0209, y: -0.0004, z: 0.054200172}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0, y: -0.02, z: 0.054200172}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -157,6 +157,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 6494699550275181967}
+--- !u!114 &6494699550275181967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562328104407606993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: tuv
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1581306553503904299
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +193,7 @@ GameObject:
   - component: {fileID: 5995446083272400091}
   - component: {fileID: 7630485622069322204}
   - component: {fileID: 3764609895472071961}
+  - component: {fileID: 1629010430755109882}
   m_Layer: 0
   m_Name: Key_4
   m_TagString: Untagged
@@ -186,8 +210,8 @@ Transform:
   m_GameObject: {fileID: 1581306553503904299}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0626, y: 0.0328, z: 0.0542}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0.05, y: 0.02, z: 0.0542}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -281,6 +305,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 1629010430755109882}
+--- !u!114 &1629010430755109882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581306553503904299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 4ghi
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2145149005108195522
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +341,7 @@ GameObject:
   - component: {fileID: 5667417553459981514}
   - component: {fileID: 1315393016326210819}
   - component: {fileID: 6758514004570163746}
+  - component: {fileID: 2014366472502037018}
   m_Layer: 0
   m_Name: Key_0
   m_TagString: Untagged
@@ -310,8 +358,8 @@ Transform:
   m_GameObject: {fileID: 2145149005108195522}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.0333, z: 0.054200172}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0.054200172}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -405,6 +453,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 2014366472502037018}
+--- !u!114 &2014366472502037018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145149005108195522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 0+
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3144757182739524638
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +489,7 @@ GameObject:
   - component: {fileID: 2508762264576999861}
   - component: {fileID: 3586033215934859326}
   - component: {fileID: 8157712559719053856}
+  - component: {fileID: 7080175801947981164}
   m_Layer: 0
   m_Name: Key_7
   m_TagString: Untagged
@@ -434,8 +506,8 @@ Transform:
   m_GameObject: {fileID: 3144757182739524638}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06259999, y: -0.0004, z: 0.054200172}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0.05, y: -0.02, z: 0.054200172}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -529,6 +601,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 7080175801947981164}
+--- !u!114 &7080175801947981164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3144757182739524638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 7pqrs
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3650352696826338779
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +637,7 @@ GameObject:
   - component: {fileID: 1449664324386815797}
   - component: {fileID: 175999246190374137}
   - component: {fileID: 2369469924252780329}
+  - component: {fileID: 815460558341422016}
   m_Layer: 0
   m_Name: Key_Asterisk
   m_TagString: Untagged
@@ -558,8 +654,8 @@ Transform:
   m_GameObject: {fileID: 3650352696826338779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06259999, y: -0.0333, z: 0.054200172}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0.05, y: -0.06, z: 0.054200172}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -653,6 +749,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 815460558341422016}
+--- !u!114 &815460558341422016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650352696826338779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: '*'
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3942598610336895483
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +785,7 @@ GameObject:
   - component: {fileID: 4903273868928419768}
   - component: {fileID: 6859289247321716539}
   - component: {fileID: 7906107991629966236}
+  - component: {fileID: 7544954921458899728}
   m_Layer: 0
   m_Name: Key_6
   m_TagString: Untagged
@@ -682,8 +802,8 @@ Transform:
   m_GameObject: {fileID: 3942598610336895483}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0245, y: 0.0328, z: 0.0542}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: -0.05, y: 0.02, z: 0.0542}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -777,6 +897,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 7544954921458899728}
+--- !u!114 &7544954921458899728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3942598610336895483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 6mno
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4632860879483041585
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,12 +947,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4632860879483041585}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.1}
+  m_LocalScale: {x: 0.17, y: 0.19, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8403335379220512014}
+  m_Father: {fileID: 6309416417660396656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8661406044879176864
 MeshFilter:
@@ -913,7 +1056,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5042991611201317560}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -930,7 +1073,7 @@ Transform:
   - {fileID: 7818558679191575137}
   - {fileID: 2842218699852282705}
   - {fileID: 5898931949849140761}
-  m_Father: {fileID: 8403335379220512014}
+  m_Father: {fileID: 6309416417660396656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6562545687572205944
 MonoBehaviour:
@@ -957,6 +1100,7 @@ GameObject:
   - component: {fileID: 9143759535491396617}
   - component: {fileID: 3958830638359678643}
   - component: {fileID: 8262065973744864538}
+  - component: {fileID: 6249120823526156651}
   m_Layer: 0
   m_Name: Key_Hash
   m_TagString: Untagged
@@ -973,8 +1117,8 @@ Transform:
   m_GameObject: {fileID: 5189624803540470557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0301, y: -0.0333, z: 0.054200172}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: -0.05, y: -0.06, z: 0.054200172}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -1068,6 +1212,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 6249120823526156651}
+--- !u!114 &6249120823526156651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189624803540470557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: '#'
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5507686036589261954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1248,7 @@ GameObject:
   - component: {fileID: 8556358512183352206}
   - component: {fileID: 5091488686080178221}
   - component: {fileID: 7734330875374264956}
+  - component: {fileID: 3292381977109743167}
   m_Layer: 0
   m_Name: Key_1
   m_TagString: Untagged
@@ -1097,8 +1265,8 @@ Transform:
   m_GameObject: {fileID: 5507686036589261954}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0626, y: 0.0614, z: 0.0542}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0.05, y: 0.06, z: 0.0542}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -1192,6 +1360,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 3292381977109743167}
+--- !u!114 &3292381977109743167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507686036589261954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 1
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6868847088657441343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1396,7 @@ GameObject:
   - component: {fileID: 2092794234138845923}
   - component: {fileID: 8735664749634238979}
   - component: {fileID: 2584308234259555271}
+  - component: {fileID: 625400907800372502}
   m_Layer: 0
   m_Name: Key_5
   m_TagString: Untagged
@@ -1221,8 +1413,8 @@ Transform:
   m_GameObject: {fileID: 6868847088657441343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0241, y: 0.0328, z: 0.0542}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0, y: 0.02, z: 0.0542}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -1316,6 +1508,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 625400907800372502}
+--- !u!114 &625400907800372502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6868847088657441343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 5jkl
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8097993877440458615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1544,7 @@ GameObject:
   - component: {fileID: 6785858767837695193}
   - component: {fileID: 8818864229971989859}
   - component: {fileID: 5352077018565161316}
+  - component: {fileID: 5664981484125661865}
   m_Layer: 0
   m_Name: Key_2
   m_TagString: Untagged
@@ -1345,8 +1561,8 @@ Transform:
   m_GameObject: {fileID: 8097993877440458615}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0266, y: 0.0614, z: 0.0542}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0.0542}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -1440,6 +1656,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 5664981484125661865}
+--- !u!114 &5664981484125661865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8097993877440458615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 2abc
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8333440910550437185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1692,7 @@ GameObject:
   - component: {fileID: 1789849491530644004}
   - component: {fileID: 8470308909181000480}
   - component: {fileID: 7773999015393547368}
+  - component: {fileID: 1996369561824410909}
   m_Layer: 0
   m_Name: Key_3
   m_TagString: Untagged
@@ -1469,8 +1709,8 @@ Transform:
   m_GameObject: {fileID: 8333440910550437185}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0244, y: 0.0614, z: 0.0542}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: -0.05, y: 0.06, z: 0.0542}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -1564,6 +1804,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 1996369561824410909}
+--- !u!114 &1996369561824410909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8333440910550437185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 3def
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8760431502517152285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6309416417660396656}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6309416417660396656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8760431502517152285}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 492295825338310888}
+  - {fileID: 1865869905135940679}
+  m_Father: {fileID: 8403335379220512014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8967379716851008202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1873,7 @@ GameObject:
   - component: {fileID: 256121250759162739}
   - component: {fileID: 3145255695396947862}
   - component: {fileID: 8065552981713457433}
+  - component: {fileID: 1937273079120013310}
   m_Layer: 0
   m_Name: Key_9
   m_TagString: Untagged
@@ -1593,8 +1890,8 @@ Transform:
   m_GameObject: {fileID: 8967379716851008202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0246, y: -0.0004, z: 0.054200172}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalPosition: {x: -0.05, y: -0.02, z: 0.054200172}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1865869905135940679}
@@ -1688,3 +1985,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525a5d8925f15b4dbeb7b90f772e0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyController
+  Interactable: {fileID: 1937273079120013310}
+--- !u!114 &1937273079120013310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967379716851008202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  UseText: 9wxyz
+  OnUsed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverStated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHoverEnded:
+    m_PersistentCalls:
+      m_Calls: []
