@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{dfd5ba06-63ce-4086-beb2-c96c9b039b7c}">
+		<property name="assetPath">
+			<value>Witches-BubbleEo3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2fb9163b-80f4-473a-b617-210525702d5a}</destination>
+		</relationship>
+	</object>
+</objects>
