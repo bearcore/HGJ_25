@@ -3,6 +3,7 @@ using FMOD.Studio;
 using FMODUnity;
 using Unity.Mathematics;
 using UnityEngine;
+using System;
 
 public class AudioTest : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class AudioTest : MonoBehaviour
     public EventReference StaticFmodEvent;
     public List<RadioFrequencyAudio> Frequencies;
     public EventReference NumberVAEvent;
+    public EventReference LettersVAEvent;
 
     private EventInstance _staticInstance;
     private EventInstance _numberVAEventInstance;
@@ -24,7 +26,8 @@ public class AudioTest : MonoBehaviour
             frequency.Instance.start();
             frequency.Instance.setVolume(0);
 
-            frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent); ;
+            frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent); 
+            frequency.LettersVAInstance = RuntimeManager.CreateInstance(LettersVAEvent);
             frequency.Initialize();
         }
         _staticInstance = RuntimeManager.CreateInstance(StaticFmodEvent);
@@ -46,8 +49,8 @@ public class AudioTest : MonoBehaviour
             otherFreqSum += distance;
         }
 
-        otherFreqSum = Mathf.Min(0.7f, otherFreqSum);
-        _staticInstance.setVolume(1f - otherFreqSum);
+        otherFreqSum = Mathf.Min(1f, otherFreqSum);
+        _staticInstance.setParameterByName("Radio Whitenoise", otherFreqSum);
     }
 }
 
@@ -60,10 +63,11 @@ public class RadioFrequencyAudio
     public float Frequency = 131.3f;
     public float FrequencyWidth = 1f;
     public float VolumeReadout = 0f;
-    public List<int> Numbers;
+    public List<char> Numbers;
     public float DelayBetween = 1.5f;
 
     public EventInstance NumberVAInstance;
+    public EventInstance LettersVAInstance;
     private int index = 0;
 
     public void Initialize()
@@ -76,9 +80,18 @@ public class RadioFrequencyAudio
 
     private void PlayNumber()
     {
-        NumberVAInstance.setParameterByName("VANumber", Numbers[index]);
-        NumberVAInstance.start();
-        NumberVAInstance.setVolume(VolumeReadout);
+        if(Char.IsDigit(Numbers[index]))
+        {
+            NumberVAInstance.setParameterByName("VANumber", (int)char.GetNumericValue(Numbers[index]));
+            NumberVAInstance.start();
+            NumberVAInstance.setVolume(VolumeReadout);
+        }
+        else
+        {
+            LettersVAInstance.setParameterByName("VANumber", char.ToLower(Numbers[index]) - 'a' + 1);
+            LettersVAInstance.start();
+            LettersVAInstance.setVolume(VolumeReadout);
+        }
 
         index++;
         if (index > Numbers.Count - 1)

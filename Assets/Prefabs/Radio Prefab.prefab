@@ -377,13 +377,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40ebfa9ca51e74502be765eeb581099f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioTest
-  sfx:
+  Knob: {fileID: 3417260328314584598}
+  StaticFmodEvent:
     Guid:
-      Data1: 662399377
-      Data2: 1132572776
-      Data3: -1093466945
-      Data4: 1057126752
-    Path: event:/Music/Music
+      Data1: -1137532851
+      Data2: 1159683748
+      Data3: -540561232
+      Data4: 640596116
+    Path: event:/Radio
+  Frequencies:
+  - FmodEvend:
+      Guid:
+        Data1: -872777812
+        Data2: 1222028432
+        Data3: -1529374563
+        Data4: -1232545035
+      Path: event:/Music
+    Frequency: 133
+    FrequencyWidth: 30
+    VolumeReadout: 0
+    Numbers: 610034007a0062003100
+    DelayBetween: 1.5
+  NumberVAEvent:
+    Guid:
+      Data1: -1004386692
+      Data2: 1194849167
+      Data3: 372608920
+      Data4: 38124397
+    Path: event:/VA
+  LettersVAEvent:
+    Guid:
+      Data1: -761288677
+      Data2: 1114163134
+      Data3: -2144734807
+      Data4: 133860572
+    Path: event:/VA Alphabet
 --- !u!1 &8467380477082418210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1038,7 @@ MonoBehaviour:
   Controller: {fileID: 0}
   VirtualCamera: {fileID: 7432653332771051943}
   FrequencyUI: {fileID: 3902416779538039769}
-  CurrentFrequency: 133
+  CurrentFrequency: 130
   MinFrequency: 50
   MaxFrequency: 250
 --- !u!4 &7723736739792036339 stripped

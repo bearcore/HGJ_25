@@ -395,17 +395,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
---- !u!114 &385682470 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3417260328314584598, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-  m_PrefabInstance: {fileID: 5641623653488352139}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b71f7de715a44b58c30218940f201e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RadioKnob
 --- !u!1 &404359649
 GameObject:
   m_ObjectHideFlags: 0
@@ -6185,7 +6174,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683664324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11634,114 +11623,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Knob
-      value: 
-      objectReference: {fileID: 385682470}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: NumberVAEvent.Path
-      value: event:/VA
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: StaticFmodEvent.Path
-      value: event:/Radio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: NumberVAEvent.Guid.Data1
-      value: -1004386692
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: NumberVAEvent.Guid.Data2
-      value: 1194849167
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: NumberVAEvent.Guid.Data3
-      value: 372608920
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: NumberVAEvent.Guid.Data4
-      value: 38124397
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: StaticFmodEvent.Guid.Data1
-      value: -1137532851
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: StaticFmodEvent.Guid.Data2
-      value: 1159683748
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: StaticFmodEvent.Guid.Data3
-      value: -540561232
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: StaticFmodEvent.Guid.Data4
-      value: 640596116
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].Frequency
-      value: 133
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].DelayBetween
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].FmodEvend.Path
-      value: event:/Music
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].FrequencyWidth
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].Numbers.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].FmodEvend.Guid.Data1
-      value: -872777812
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].FmodEvend.Guid.Data2
-      value: 1222028432
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].FmodEvend.Guid.Data3
-      value: -1529374563
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: Frequencies.Array.data[0].FmodEvend.Guid.Data4
-      value: -1232545035
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: 'Frequencies.Array.data[0].Numbers.Array.data[0]'
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: 'Frequencies.Array.data[0].Numbers.Array.data[1]'
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: 'Frequencies.Array.data[0].Numbers.Array.data[2]'
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280876460589327155, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: 'Frequencies.Array.data[0].Numbers.Array.data[3]'
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 3417260328314584598, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
       propertyPath: Controller
       value: 
       objectReference: {fileID: 2095260658}
-    - target: {fileID: 3417260328314584598, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
-      propertyPath: CurrentFrequency
-      value: 130
-      objectReference: {fileID: 0}
     - target: {fileID: 6629390875774218314, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
       propertyPath: m_Camera
       value: 
