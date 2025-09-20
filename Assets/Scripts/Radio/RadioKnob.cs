@@ -23,7 +23,7 @@ public class RadioKnob : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Interactable.OnUsed.AddListener(StartInteracting);
+        Interactable.OnUsed.AddListener(ToggleInteraction);
         _lookAction = InputSystem.actions.FindAction("Look");
     }
 
@@ -40,8 +40,16 @@ public class RadioKnob : MonoBehaviour
         CurrentFrequency += -look.y * RotationStrength;
         CurrentFrequency = Mathf.Clamp(CurrentFrequency, MinFrequency, MaxFrequency);
 
-        var rounded = (Mathf.Round(math.remap(0, 360, 50, 250, CurrentFrequency) * 10f) / 10f);
+        var rounded = Mathf.Round(CurrentFrequency * 10f) / 10f;
         FrequencyUI.text = rounded.ToString().Contains(".") ? rounded + "00" : rounded + ".000";
+    }
+
+    public void ToggleInteraction()
+    {
+        if (IsInteracting)
+            StopInteracting();
+        else
+            StartInteracting();
     }
 
     public void StartInteracting()
