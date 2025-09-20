@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8403335379220512014}
+  - component: {fileID: 4264868111127851792}
   m_Layer: 0
   m_Name: ControlPanel
   m_TagString: Untagged
@@ -32,6 +33,24 @@ Transform:
   - {fileID: 6309416417660396656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4264868111127851792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513005451522660990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e0a97f46f13b44db8733bceebed010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlPanel
+  OnValid:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInvalid:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1562328104407606993
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,7 +66,7 @@ GameObject:
   - component: {fileID: 2395641672866117721}
   - component: {fileID: 6494699550275181967}
   m_Layer: 0
-  m_Name: Key_8
+  m_Name: 8tuv
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  UseText: tuv
+  UseText: 8tuv
   OnUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -195,7 +214,7 @@ GameObject:
   - component: {fileID: 3764609895472071961}
   - component: {fileID: 1629010430755109882}
   m_Layer: 0
-  m_Name: Key_4
+  m_Name: 4ghi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,7 +362,7 @@ GameObject:
   - component: {fileID: 6758514004570163746}
   - component: {fileID: 2014366472502037018}
   m_Layer: 0
-  m_Name: Key_0
+  m_Name: 0+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -491,7 +510,7 @@ GameObject:
   - component: {fileID: 8157712559719053856}
   - component: {fileID: 7080175801947981164}
   m_Layer: 0
-  m_Name: Key_7
+  m_Name: 7pwrs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +658,7 @@ GameObject:
   - component: {fileID: 2369469924252780329}
   - component: {fileID: 815460558341422016}
   m_Layer: 0
-  m_Name: Key_Asterisk
+  m_Name: Key_Reset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  UseText: '*'
+  UseText: Reset
   OnUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -787,7 +806,7 @@ GameObject:
   - component: {fileID: 7906107991629966236}
   - component: {fileID: 7544954921458899728}
   m_Layer: 0
-  m_Name: Key_6
+  m_Name: 6mno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1102,7 +1121,7 @@ GameObject:
   - component: {fileID: 8262065973744864538}
   - component: {fileID: 6249120823526156651}
   m_Layer: 0
-  m_Name: Key_Hash
+  m_Name: Key_Confirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1225,7 +1244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  UseText: '#'
+  UseText: Confirm
   OnUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -1250,7 +1269,7 @@ GameObject:
   - component: {fileID: 7734330875374264956}
   - component: {fileID: 3292381977109743167}
   m_Layer: 0
-  m_Name: Key_1
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1398,7 +1417,7 @@ GameObject:
   - component: {fileID: 2584308234259555271}
   - component: {fileID: 625400907800372502}
   m_Layer: 0
-  m_Name: Key_5
+  m_Name: 5jkl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1546,7 +1565,7 @@ GameObject:
   - component: {fileID: 5352077018565161316}
   - component: {fileID: 5664981484125661865}
   m_Layer: 0
-  m_Name: Key_2
+  m_Name: 2abc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1694,7 +1713,7 @@ GameObject:
   - component: {fileID: 7773999015393547368}
   - component: {fileID: 1996369561824410909}
   m_Layer: 0
-  m_Name: Key_3
+  m_Name: 3def
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1875,7 +1894,7 @@ GameObject:
   - component: {fileID: 8065552981713457433}
   - component: {fileID: 1937273079120013310}
   m_Layer: 0
-  m_Name: Key_9
+  m_Name: 9wxyz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
