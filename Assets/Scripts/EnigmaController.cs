@@ -12,7 +12,8 @@ public class EnigmaController : MonoBehaviour
     private void EditStation()
     {
         //Test
-        EditEnigma(133.7f, GenerateCodeList(true,true,5));
+        CreateEnigma(187.7f, GenerateCodeList(true,true,5));
+        CreateEnigma(89.0f, "f", "u", "c", "k");
     }
 
 
@@ -32,7 +33,7 @@ public class EnigmaController : MonoBehaviour
     public void CreateEnigma(float frequency, params string[] codes)
     {
         if (codes == null) return;
-        if (frequency < 10 || frequency > 400)// todo: Korrekte werte angeben
+        if (frequency < 50 || frequency > 250)
         {
             Debug.LogError("Frequenz ist außerhalb des Gültigen bereichs beim erstellen einer Enigma");
             return; 
@@ -42,10 +43,7 @@ public class EnigmaController : MonoBehaviour
         RadioFrequencyAudio channel = new RadioFrequencyAudio();
         channel.Frequency = frequency;
 
-        Debug.Log("Frequenz:" + frequency + " Params:" + codes + " Radio name: " + radio.name);
-
-
-
+        Debug.Log("Frequenz:" + frequency + " Params:" + codes.ToString() + " Radio name: " + radio.name);
 
         // String Arr in List umwandeln
         sequence.AddRange(codes
@@ -59,41 +57,9 @@ public class EnigmaController : MonoBehaviour
         //String liste in Char liste umwandeln und an das RadioFrequencyAudio / Sender übergeben.
         channel.Numbers = ToCharList(sequence);
 
-        
-        //test überschreiben der liste
-        radio.Frequencies.Clear();
-        radio.Frequencies.Add(channel); // Sender hinzufügen todo: nach beenden der aufgab ggf entfernen
-
-    }
-
-    public void EditEnigma(float frequency, params string[] codes)
-    {
-        if (codes == null) return;
-        if (frequency < 10 || frequency > 400)// todo: Korrekte werte angeben
-        {
-            Debug.LogError("Frequenz ist außerhalb des Gültigen bereichs beim erstellen einer Enigma");
-            return;
-        }
-        List<string> sequence = new List<string>();
-        // neuen Sender erstellen und die Frequenz zuweisen. 
-        radio.Frequencies[0].Frequency = frequency;
-
-        Debug.Log("Frequenz:" + frequency + " Params:" + codes + " Radio name: " + radio.name);
-
-
-
-
-        // String Arr in List umwandeln
-        sequence.AddRange(codes
-            .Where(s => !string.IsNullOrWhiteSpace(s))
-            .Select(s => s.Trim()));
-
-        //Controlpanel mit der List ausstatten
-        cp.SetTargetSequence(sequence);
-
-
-        //String liste in Char liste umwandeln und an das RadioFrequencyAudio / Sender übergeben.
-        radio.Frequencies[0].Numbers = ToCharList(sequence);
+        Debug.Log("Neue Station soll hinzugefügt werden");
+        radio.AddFrequency(channel); // Sender hinzufügen todo: nach beenden der aufgab ggf entfernen
+        Debug.Log("Neue station wurde hinzugefügt?");
 
     }
 
