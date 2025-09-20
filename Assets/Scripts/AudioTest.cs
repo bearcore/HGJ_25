@@ -35,6 +35,19 @@ public class AudioTest : MonoBehaviour
 
     }
 
+    public void AddFrequency(RadioFrequencyAudio frequency)
+    {
+        frequency.Instance = RuntimeManager.CreateInstance(frequency.FmodEvend);
+        frequency.Instance.start();
+        frequency.Instance.setVolume(0);
+
+        frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent);
+        frequency.LettersVAInstance = RuntimeManager.CreateInstance(LettersVAEvent);
+        frequency.Initialize();
+
+        Frequencies.Add(frequency);
+    }
+
     private void Update()
     {
         var frequencyNum = Knob.CurrentFrequency;
