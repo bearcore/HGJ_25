@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 7716970516895477443}
   - component: {fileID: 1309896712381467317}
+  - component: {fileID: 4689590855525866145}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -409,3 +410,25 @@ MonoBehaviour:
   InsideColliders:
   - {fileID: 0}
   InsideCount: 0
+--- !u!114 &4689590855525866145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d81883faf51d4b3a94f6aa3ebb447b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FootstepSounds
+  FootstepEvent:
+    Guid:
+      Data1: 2137357817
+      Data2: 1338003044
+      Data3: -1747498065
+      Data4: 1961742625
+    Path: event:/Footsteps
+  SnowSound: {fileID: 1309896712381467317}
+  FootstepDistance: 2
+  CrossedDistance: 0

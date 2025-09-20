@@ -25,12 +25,16 @@ public class AudioTest : MonoBehaviour
             frequency.Instance = RuntimeManager.CreateInstance(frequency.FmodEvend);
             frequency.Instance.start();
             frequency.Instance.setVolume(0);
+            frequency.Instance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
 
-            frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent); 
+            frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent);
+            frequency.NumberVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
             frequency.LettersVAInstance = RuntimeManager.CreateInstance(LettersVAEvent);
+            frequency.LettersVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
             frequency.Initialize();
         }
         _staticInstance = RuntimeManager.CreateInstance(StaticFmodEvent);
+        _staticInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
         _staticInstance.start();
 
     }
@@ -42,7 +46,9 @@ public class AudioTest : MonoBehaviour
         frequency.Instance.setVolume(0);
 
         frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent);
+        frequency.NumberVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
         frequency.LettersVAInstance = RuntimeManager.CreateInstance(LettersVAEvent);
+        frequency.LettersVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
         frequency.Initialize();
 
         Frequencies.Add(frequency);

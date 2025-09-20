@@ -1041,6 +1041,14 @@ MonoBehaviour:
   CurrentFrequency: 130
   MinFrequency: 50
   MaxFrequency: 250
+  ClickSoundRequirement: 0.4
+  ClickEvent:
+    Guid:
+      Data1: 67356757
+      Data2: 1151774520
+      Data3: 1079889850
+      Data4: 1690438325
+    Path: event:/TurnKnob
 --- !u!4 &7723736739792036339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3982752597452717262, guid: 9ecf163de20dd4727a15b1c762bce6ec, type: 3}
