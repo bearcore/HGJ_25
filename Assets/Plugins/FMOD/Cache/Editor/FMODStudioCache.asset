@@ -45,7 +45,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/Musik
-  lastModified: 638939856930863173
+  lastModified: 638939891883388227
   FileSizes:
   - Name: Desktop
     Value: 3192896
@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638939894007003556
+  lastModified: 638939894798636813
   FileSizes:
   - Name: Desktop
     Value: 1442
@@ -137,7 +137,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638939894006990846
+  lastModified: 638939891883214517
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -310,7 +310,7 @@ MonoBehaviour:
   - {fileID: -3233765998444635923}
   StringsBanks:
   - {fileID: -3803964580254505436}
-  cacheTime: 638939896215317871
+  cacheTime: 638939916931688751
   cacheVersion: 131632
 --- !u!114 &275241915379697189
 MonoBehaviour:
@@ -523,7 +523,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638939882949444200
+  lastModified: 638939894798677276
   FileSizes:
   - Name: Desktop
     Value: 1603328
@@ -567,7 +567,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/VA.bank
   Name: VA
   StudioPath: bank:/VA
-  lastModified: 638939896215317871
+  lastModified: 638939916931688751
   FileSizes:
   - Name: Desktop
     Value: 783392
