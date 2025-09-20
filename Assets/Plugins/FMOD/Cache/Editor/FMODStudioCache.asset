@@ -310,7 +310,7 @@ MonoBehaviour:
   - {fileID: -3233765998444635923}
   StringsBanks:
   - {fileID: -3803964580254505436}
-  cacheTime: 638939894016387879
+  cacheTime: 638939896215317871
   cacheVersion: 131632
 --- !u!114 &275241915379697189
 MonoBehaviour:
@@ -567,8 +567,8 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/VA.bank
   Name: VA
   StudioPath: bank:/VA
-  lastModified: 638939894016387879
+  lastModified: 638939896215317871
   FileSizes:
   - Name: Desktop
-    Value: 782912
+    Value: 783392
   Exists: 1
