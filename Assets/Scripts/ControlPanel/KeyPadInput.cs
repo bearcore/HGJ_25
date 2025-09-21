@@ -2,10 +2,14 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 using System;
+using TMPro;
+using System.Linq;
 
 public class KeyPad : MonoBehaviour
 {
-    private List<string> targetList;
+    public TextMeshProUGUI OutputText;
+
+    public List<string> targetList;
     private List<string> inputList;
     private bool changed = false;
 
@@ -15,7 +19,7 @@ public class KeyPad : MonoBehaviour
     void Start()
     {
         cp = gameObject.GetComponentInParent<ControlPanel>();
-        targetList = new List<string>() {"1","D","3","s" };
+        //targetList = new List<string>() {"1","D","3","s" };
         inputList = new List<string>();
     }
 
@@ -31,19 +35,20 @@ public class KeyPad : MonoBehaviour
     
     private void ValidateSequence()
     {
+        Debug.Log("TargetList: " + string.Join(", ", targetList));
         if (inputList == null || targetList == null)
         {
             Debug.LogWarning("ValidateSequenze: inputList oder targetList ist null.");
             cp.OnInvalid.Invoke();
-            ClearSequence();
+            //ClearSequence();
             return;
         }
 
         if (inputList.Count != targetList.Count)
         {
-            Debug.LogWarning($"ValidateSequenze: Unterschiedliche Länge (input={inputList.Count}, target={targetList.Count}).");
+            Debug.LogWarning($"ValidateSequenze: Unterschiedliche L?nge (input={inputList.Count}, target={targetList.Count}).");
             cp.OnInvalid.Invoke();
-            ClearSequence();
+            //ClearSequence();
             return;
         }
 
@@ -55,17 +60,17 @@ public class KeyPad : MonoBehaviour
             string needle = targetList[i] ?? string.Empty; // z.B. "2"
 
 
-            if (src.IndexOf(needle, cmp) < 0) // Falls das geforderte Zeichen nicht gedrückt wurde
+            if (src.IndexOf(needle, cmp) < 0) // Falls das geforderte Zeichen nicht gedr?ckt wurde
             {
-                Debug.Log($"ValidateSequenze: Fehler bei Index {i}: \"{src}\" enthält nicht \"{needle}\".");
-                cp.OnInvalid.Invoke();
-                ClearSequence();
+                Debug.Log($"ValidateSequenze: Fehler bei Index {i}: \"{src}\" enth?lt nicht \"{needle}\".");
+                cp.SetValid(false);
+                //ClearSequence();
                 return;
             }
         }
-        // an dieser stelle kommt der code nur an, wenn beide listen gleich lang sind und alle prüfungen erfolgreich waren. => Korrekt
-        cp.OnValid.Invoke();
-        ClearSequence();
+        // an dieser stelle kommt der code nur an, wenn beide listen gleich lang sind und alle pr?fungen erfolgreich waren. => Korrekt
+        cp.SetValid(true);
+        //ClearSequence();
     }
 
     private void ClearSequence()
@@ -87,8 +92,14 @@ public class KeyPad : MonoBehaviour
         } else
         {
             inputList.Add(keyInput);
+            ValidateSequence();
             changed = true;
+        }
 
+        OutputText.text = string.Join("", inputList.Select(x => x.First()));
+        if (cp.IsValid)
+        {
+            OutputText.color = Color.green;
         }
     }
     public void SetTargetSequence(List<string> targetList)

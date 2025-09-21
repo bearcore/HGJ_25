@@ -52,7 +52,7 @@ public class RadioKnob : MonoBehaviour
             _clickSoundSum += Mathf.Abs(look.y) * RotationStrength;
         if(_clickSoundSum > ClickSoundRequirement)
         {
-            _clickSoundSum -= ClickSoundRequirement;
+            _clickSoundSum = 0;
             _clickInstance.start();
         }
 

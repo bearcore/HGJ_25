@@ -6,6 +6,7 @@ public class PlayerInteraction : MonoBehaviour
     public float InteractionDistance = 1f;
     public Interactable LastHitInteractable;
     public InteractionHintUI interactionHintUI;
+    public Canvas CrosshairCanvas;
 
     private InputAction _useAction;
     private Camera _mainCamera;
@@ -30,7 +31,9 @@ public class PlayerInteraction : MonoBehaviour
                 lastHitInteractable = interactable;
         }
 
-        if(lastHitInteractable == null)
+        CrosshairCanvas.gameObject.SetActive(lastHitInteractable != null);
+
+        if (lastHitInteractable == null)
         {
             if(LastHitInteractable != null)
             {

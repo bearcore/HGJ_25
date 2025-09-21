@@ -6,6 +6,9 @@ public class ControlPanel : MonoBehaviour
 {
     public UnityEvent OnValid;
     public UnityEvent OnInvalid;
+    public bool IsValid;
+    public List<GameObject> ActivateOnValid;
+    public List<GameObject> DeActivateOnValid;
 
     private KeyPad keypad;
 
@@ -26,17 +29,22 @@ public class ControlPanel : MonoBehaviour
         keypad.SetTargetSequence(targetList);
     }
 
-    private void Awake()
+    public void SetValid(bool valid)
     {
-        OnValid.AddListener(() =>
+        IsValid = valid;
+        if (IsValid)
         {
-            Debug.Log("Code was Valid");
-        });
-
-        OnInvalid.AddListener(() =>
-        {
-            Debug.Log("Code was not Valid");
-        });
-
+            foreach (var activate in ActivateOnValid)
+            {
+                activate.SetActive(true);
+            }
+            foreach (var activate in DeActivateOnValid)
+            {
+                activate.SetActive(false);
+            }
+            OnValid.Invoke();
+        }
+        else
+            OnInvalid.Invoke();
     }
 }
