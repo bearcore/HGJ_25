@@ -39,17 +39,17 @@ public class RadioKnob : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsInteracting) return;
-
         var look = _lookAction.ReadValue<Vector2>();
-        Debug.Log(look.y);
-        transform.localEulerAngles = transform.localEulerAngles + new Vector3(0f, 0f, -look.y * RotationStrength * 3f);
+        if(IsInteracting)
+            transform.localEulerAngles = transform.localEulerAngles + new Vector3(0f, 0f, -look.y * RotationStrength * 3f);
         CurrentRotation = transform.eulerAngles.z;
 
-        CurrentFrequency += -look.y * RotationStrength;
+        if (IsInteracting)
+            CurrentFrequency += -look.y * RotationStrength;
         CurrentFrequency = Mathf.Clamp(CurrentFrequency, MinFrequency, MaxFrequency);
 
-        _clickSoundSum += Mathf.Abs(look.y) * RotationStrength;
+        if (IsInteracting)
+            _clickSoundSum += Mathf.Abs(look.y) * RotationStrength;
         if(_clickSoundSum > ClickSoundRequirement)
         {
             _clickSoundSum -= ClickSoundRequirement;

@@ -65,7 +65,8 @@ public class AudioTest : MonoBehaviour
             distance = math.remap(frequency.FrequencyWidth, 0, 0, 1, distance);
             //frequency.Instance.setVolume(distance);
             frequency.VolumeReadout = distance;
-            otherFreqSum += distance;
+            if(frequency.IsActive)
+                otherFreqSum += distance;
         }
 
         otherFreqSum = Mathf.Min(1f, otherFreqSum);
@@ -83,7 +84,8 @@ public class RadioFrequencyAudio
     public float FrequencyWidth = 1f;
     public float VolumeReadout = 0f;
     public List<char> Numbers;
-    public float DelayBetween = 1.5f;
+    public float DelayBetween = 1f;
+    public bool IsActive = false;
 
     public EventInstance NumberVAInstance;
     public EventInstance LettersVAInstance;
@@ -99,26 +101,43 @@ public class RadioFrequencyAudio
 
     private void PlayNumber()
     {
-        if(Char.IsDigit(Numbers[index]))
+        if (IsActive)
         {
-            NumberVAInstance.setParameterByName("VANumber", (int)char.GetNumericValue(Numbers[index]));
-            NumberVAInstance.start();
-            NumberVAInstance.setVolume(VolumeReadout);
-        }
-        else
-        {
-            LettersVAInstance.setParameterByName("VANumber", char.ToLower(Numbers[index]) - 'a' + 1);
-            LettersVAInstance.start();
-            LettersVAInstance.setVolume(VolumeReadout);
+            if (Char.IsDigit(Numbers[index]))
+            {
+                NumberVAInstance.setParameterByName("VANumber", (int)char.GetNumericValue(Numbers[index]));
+                NumberVAInstance.start();
+                NumberVAInstance.setVolume(VolumeReadout);
+            }
+            else
+            {
+                LettersVAInstance.setParameterByName("VANumber", char.ToLower(Numbers[index]) - 'a' + 1);
+                LettersVAInstance.start();
+                LettersVAInstance.setVolume(VolumeReadout);
+            }
         }
 
         index++;
         if (index > Numbers.Count - 1)
-            index = 0;
-
-        Lerp.Delay(DelayBetween + UnityEngine.Random.Range(-0.5f, 0.5f), () =>
         {
-            PlayNumber();
-        });
+            index = 0;
+            Lerp.Delay(DelayBetween, () =>
+            {
+                LettersVAInstance.setParameterByName("VANumber", 0);
+                LettersVAInstance.start();
+                LettersVAInstance.setVolume(VolumeReadout);
+                Lerp.Delay(DelayBetween + 2.5f, () =>
+                {
+                    PlayNumber();
+                });
+            });
+        }
+        else
+        {
+            Lerp.Delay(DelayBetween, () =>
+            {
+                PlayNumber();
+            });
+        }
     }
 }
