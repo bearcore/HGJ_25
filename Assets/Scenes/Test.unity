@@ -12026,10 +12026,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4858f2b28694b46c4b44dfc48578644f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurnableAntenna
-  CorrectAngle: 275
   RotationPerPress: 25
   Interactable: {fileID: 1050358127}
-  IsInCorrectRotation: 0
+  AudioTest: {fileID: 0}
+  Targets: []
 --- !u!65 &1050358129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18539,6 +18539,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6622165523007272269, guid: 118cde8d217d2464894337b48d3ba31b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e21e19cb87b140d99c47fcd875bd94d, type: 2}
+    - target: {fileID: 33111266578138206, guid: 118cde8d217d2464894337b48d3ba31b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e21e19cb87b140d99c47fcd875bd94d, type: 2}
     - target: {fileID: 919132149155446097, guid: 118cde8d217d2464894337b48d3ba31b, type: 3}
       propertyPath: m_Name
       value: Antenne
