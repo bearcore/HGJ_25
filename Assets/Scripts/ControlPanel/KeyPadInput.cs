@@ -35,11 +35,12 @@ public class KeyPad : MonoBehaviour
     
     private void ValidateSequence()
     {
+        Debug.Log("TargetList: " + string.Join(", ", targetList));
         if (inputList == null || targetList == null)
         {
             Debug.LogWarning("ValidateSequenze: inputList oder targetList ist null.");
             cp.OnInvalid.Invoke();
-            ClearSequence();
+            //ClearSequence();
             return;
         }
 
@@ -47,7 +48,7 @@ public class KeyPad : MonoBehaviour
         {
             Debug.LogWarning($"ValidateSequenze: Unterschiedliche L?nge (input={inputList.Count}, target={targetList.Count}).");
             cp.OnInvalid.Invoke();
-            ClearSequence();
+            //ClearSequence();
             return;
         }
 
@@ -63,13 +64,13 @@ public class KeyPad : MonoBehaviour
             {
                 Debug.Log($"ValidateSequenze: Fehler bei Index {i}: \"{src}\" enth?lt nicht \"{needle}\".");
                 cp.SetValid(false);
-                ClearSequence();
+                //ClearSequence();
                 return;
             }
         }
         // an dieser stelle kommt der code nur an, wenn beide listen gleich lang sind und alle pr?fungen erfolgreich waren. => Korrekt
         cp.SetValid(true);
-        ClearSequence();
+        //ClearSequence();
     }
 
     private void ClearSequence()
@@ -91,6 +92,7 @@ public class KeyPad : MonoBehaviour
         } else
         {
             inputList.Add(keyInput);
+            ValidateSequence();
             changed = true;
         }
 

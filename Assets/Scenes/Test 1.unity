@@ -3110,6 +3110,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.39999998, y: 0.40000007, z: 1.0000002}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.5000001}
+--- !u!114 &315759280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4264868111127851792, guid: 62f73b40d8b220a46a8fb770b1f35731, type: 3}
+  m_PrefabInstance: {fileID: 1304360548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e0a97f46f13b44db8733bceebed010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlPanel
 --- !u!1001 &316127692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3925,6 +3936,7 @@ RectTransform:
   m_Children:
   - {fileID: 1063968368}
   - {fileID: 1916276276}
+  - {fileID: 728902234}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4164,7 +4176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Signals\n\n\n\n\n\nMade By\n\nMarten\nJanek\nBj\xF6rn\nNiklas\n\nVoice
+  m_text: "Signals\n\n\n\n\n\nMade By\n\nMarten\nJanek\nBj\xF6rn\nNiklas\nEugen\n\nVoice
     Acting\n\nHannah\nLovis\nStefan\n\n\nMade for Hannover Game Jam 2025"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 246a66597b770473696840f97f164104, type: 2}
@@ -6373,12 +6385,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728902232}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 823.5, y: 514.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 479345335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731295233
 GameObject:
@@ -14151,7 +14163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754cc2e569e2543508c2008eb8a7be82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  UseText: "Empf\xE4gerantenne drehen"
+  UseText: "Empf\xE4nger drehen"
   OnUsed:
     m_PersistentCalls:
       m_Calls: []
@@ -14476,6 +14488,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+--- !u!1 &1075483910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7689514474032469302, guid: dcf7a9786da33c340a8af58bfe22cf5a, type: 3}
+  m_PrefabInstance: {fileID: 1776775612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1075483913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075483910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4f9e7d99a02401a8616743af74dae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiKeypadController
+  Panels:
+  - {fileID: 928287211}
+  - {fileID: 315759280}
+  - {fileID: 1992077060}
+  Outro: {fileID: 758022707}
 --- !u!1 &1094442030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b6d2949b2fb15499d9a5b4643c1380ab, type: 3}
@@ -34200,7 +34234,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7689514474032469302, guid: dcf7a9786da33c340a8af58bfe22cf5a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075483913}
   m_SourcePrefab: {fileID: 100100000, guid: dcf7a9786da33c340a8af58bfe22cf5a, type: 3}
 --- !u!1001 &1781604987
 PrefabInstance:
@@ -45771,6 +45808,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1094442034}
   m_SourcePrefab: {fileID: 100100000, guid: b6d2949b2fb15499d9a5b4643c1380ab, type: 3}
+--- !u!114 &1992077060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4264868111127851792, guid: 62f73b40d8b220a46a8fb770b1f35731, type: 3}
+  m_PrefabInstance: {fileID: 1525750414}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e0a97f46f13b44db8733bceebed010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlPanel
 --- !u!1 &1996360105
 GameObject:
   m_ObjectHideFlags: 0
@@ -47444,7 +47492,6 @@ SceneRoots:
   - {fileID: 597448607}
   - {fileID: 1776775612}
   - {fileID: 1996360107}
-  - {fileID: 728902234}
   - {fileID: 479345335}
   - {fileID: 827256392}
   - {fileID: 758022709}
