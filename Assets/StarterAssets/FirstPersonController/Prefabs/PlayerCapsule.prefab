@@ -160,6 +160,8 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 7716970516895477443}
   - component: {fileID: 1309896712381467317}
+  - component: {fileID: 4689590855525866145}
+  - component: {fileID: 8891088405034490450}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -203,7 +205,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.25
   m_SkinWidth: 0.02
@@ -221,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 4
+  MoveSpeed: 2
   SprintSpeed: 6
   RotationSpeed: 6
   SpeedChangeRate: 10
@@ -408,4 +410,45 @@ MonoBehaviour:
     Path: event:/Blizzard
   InsideColliders:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   InsideCount: 0
+--- !u!114 &4689590855525866145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d81883faf51d4b3a94f6aa3ebb447b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FootstepSounds
+  FootstepEvent:
+    Guid:
+      Data1: 2137357817
+      Data2: 1338003044
+      Data3: -1747498065
+      Data4: 1961742625
+    Path: event:/Footsteps
+  SnowSound: {fileID: 1309896712381467317}
+  FootstepDistance: 2
+  CrossedDistance: 0
+--- !u!114 &8891088405034490450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d7210d688544d5ad9a60fd42111ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShakeController
+  SnowSound: {fileID: 1309896712381467317}
+  ShakeCamera: {fileID: 0}

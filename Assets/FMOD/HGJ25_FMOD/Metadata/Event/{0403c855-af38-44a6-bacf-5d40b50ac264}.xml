@@ -5,7 +5,7 @@
 			<value>TurnKnob</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b2ec596d-c6e2-44ea-b43d-19ad4159f5ec}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{c5c12459-a9d6-450e-b1a6-e01adc9e22e6}">
 		<relationship name="effects">
 			<destination>{628ce8b5-a519-4aa5-9730-25263bfd7dd0}</destination>
+			<destination>{dd9e9acd-c50d-410f-a3c5-f86477acb529}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{42dc98ea-7c69-4385-980a-d46a604e824f}" />
@@ -121,6 +122,7 @@
 	</object>
 	<object class="MixerBusFader" id="{933badc8-86ad-40f3-9b13-3d4f10ac3914}" />
 	<object class="MixerBusFader" id="{628ce8b5-a519-4aa5-9730-25263bfd7dd0}" />
+	<object class="SpatialiserEffect" id="{dd9e9acd-c50d-410f-a3c5-f86477acb529}" />
 	<object class="SingleSound" id="{fbf943e0-c864-4b0c-88cc-a44fe60d4ebd}">
 		<relationship name="audioFile">
 			<destination>{303d0e27-4db5-424b-8233-0484bac03ea9}</destination>

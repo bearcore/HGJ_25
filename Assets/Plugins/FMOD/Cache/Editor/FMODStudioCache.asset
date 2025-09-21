@@ -21,7 +21,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 7540095231169722867}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 544462217694877160}
@@ -45,7 +45,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Musik.bank
   Name: Musik
   StudioPath: bank:/Musik
-  lastModified: 638939891883388227
+  lastModified: 638939856930863173
   FileSizes:
   - Name: Desktop
     Value: 3192896
@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638939894798636813
+  lastModified: 638939894007003556
   FileSizes:
   - Name: Desktop
     Value: 1442
@@ -137,7 +137,7 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638939891883214517
+  lastModified: 638939894006990846
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -163,7 +163,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 6884758077676994440}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: 7030637257385827615}
@@ -191,7 +191,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 6884758077676994440}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 7540095231169722867}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 2431968386924735738}
@@ -310,7 +310,7 @@ MonoBehaviour:
   - {fileID: -3233765998444635923}
   StringsBanks:
   - {fileID: -3803964580254505436}
-  cacheTime: 638939916931688751
+  cacheTime: 638940107246187822
   cacheVersion: 131632
 --- !u!114 &275241915379697189
 MonoBehaviour:
@@ -523,10 +523,10 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638939894798677276
+  lastModified: 638940107245643020
   FileSizes:
   - Name: Desktop
-    Value: 1603328
+    Value: 1603904
   Exists: 1
 --- !u!114 &7030637257385827615
 MonoBehaviour:
@@ -567,8 +567,8 @@ MonoBehaviour:
   Path: Assets/FMOD/HGJ25_FMOD/Build/Desktop/VA.bank
   Name: VA
   StudioPath: bank:/VA
-  lastModified: 638939916931688751
+  lastModified: 638940107246187822
   FileSizes:
   - Name: Desktop
-    Value: 783392
+    Value: 783936
   Exists: 1
