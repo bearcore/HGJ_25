@@ -14369,6 +14369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terminal
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95e0558606f684b5a9c3546980216b7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46567,6 +46571,38 @@ PrefabInstance:
     - target: {fileID: 1587970958665792515, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
       propertyPath: m_Intensity
       value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594332066143028522, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 3417260328314584598, guid: ad4f3a2ec97a44704815ee99cc81e5f4, type: 3}
       propertyPath: Controller
