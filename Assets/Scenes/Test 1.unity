@@ -896,7 +896,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 9b29829648d9944f5b8b2bb79e7977cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3a84689a3f731411989c7e82c4f74328, type: 2}
+      objectReference: {fileID: 2100000, guid: eb8034c0f651146a1acfacec68949a30, type: 2}
     - target: {fileID: 919132149155446097, guid: 9b29829648d9944f5b8b2bb79e7977cf, type: 3}
       propertyPath: m_Name
       value: Poller (1)
