@@ -12,6 +12,7 @@ public class AudioTest : MonoBehaviour
     public List<RadioFrequencyAudio> Frequencies;
     public EventReference NumberVAEvent;
     public EventReference LettersVAEvent;
+    public GameObject SoundLocation;
 
     private EventInstance _staticInstance;
     private EventInstance _numberVAEventInstance;
@@ -25,16 +26,16 @@ public class AudioTest : MonoBehaviour
             frequency.Instance = RuntimeManager.CreateInstance(frequency.FmodEvend);
             frequency.Instance.start();
             frequency.Instance.setVolume(0);
-            frequency.Instance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+            frequency.Instance.set3DAttributes(RuntimeUtils.To3DAttributes(SoundLocation));
 
             frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent);
-            frequency.NumberVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+            frequency.NumberVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(SoundLocation));
             frequency.LettersVAInstance = RuntimeManager.CreateInstance(LettersVAEvent);
-            frequency.LettersVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+            frequency.LettersVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(SoundLocation));
             frequency.Initialize();
         }
         _staticInstance = RuntimeManager.CreateInstance(StaticFmodEvent);
-        _staticInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        _staticInstance.set3DAttributes(RuntimeUtils.To3DAttributes(SoundLocation));
         _staticInstance.start();
 
     }
@@ -42,9 +43,9 @@ public class AudioTest : MonoBehaviour
     public void AddFrequency(RadioFrequencyAudio frequency)
     {
         frequency.NumberVAInstance = RuntimeManager.CreateInstance(NumberVAEvent);
-        frequency.NumberVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        frequency.NumberVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(SoundLocation));
         frequency.LettersVAInstance = RuntimeManager.CreateInstance(LettersVAEvent);
-        frequency.LettersVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
+        frequency.LettersVAInstance.set3DAttributes(RuntimeUtils.To3DAttributes(SoundLocation));
         frequency.Initialize();
 
         Frequencies.Add(frequency);

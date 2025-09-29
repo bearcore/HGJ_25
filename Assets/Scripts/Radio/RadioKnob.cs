@@ -2,6 +2,7 @@ using Cinemachine;
 using FMOD.Studio;
 using FMODUnity;
 using StarterAssets;
+using System.Globalization;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
@@ -57,7 +58,8 @@ public class RadioKnob : MonoBehaviour
         }
 
         var rounded = Mathf.Round(CurrentFrequency * 10f) / 10f;
-        FrequencyUI.text = rounded.ToString().Contains(".") ? rounded + "00" : rounded + ".000";
+        var roundedString = rounded.ToString(CultureInfo.InvariantCulture);
+        FrequencyUI.text = roundedString.Contains(".") ? roundedString : roundedString + ".0";
     }
 
     public void ToggleInteraction()

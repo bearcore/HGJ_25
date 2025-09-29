@@ -20,17 +20,29 @@ public class TurnableAntenna : MonoBehaviour
     {
         var anyMatch = false;
         transform.eulerAngles = transform.eulerAngles + new Vector3(0f, RotationPerPress);
+        AntennaTarget activeTarget = null;
         foreach (var target in Targets)
         {
             var match = Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.y, target.TargetAngle)) < 25f;
             AudioTest.Frequencies[target.UnlockIndex].IsActive = match;
 
-            if (match) anyMatch = true;
+            if (match)
+            {
+                activeTarget = target;
+                anyMatch = true;
+            }
+
+            target.ConsoleIndicators.ForEach(x => x.SetActive(match));
+            target.InactiveIndicators.ForEach(x => x.SetActive(!match));
         }
 
         foreach (var indicator in Indicators)
         {
             indicator.SetActive(anyMatch);
+            if(activeTarget != null)
+            {
+                indicator.GetComponent<MeshRenderer>().material = activeTarget.Lightcolor;
+            }
         }
     }
 
@@ -47,4 +59,7 @@ public class AntennaTarget
 {
     public float TargetAngle;
     public int UnlockIndex;
+    public Material Lightcolor;
+    public List<GameObject> ConsoleIndicators;
+    public List<GameObject> InactiveIndicators;
 }

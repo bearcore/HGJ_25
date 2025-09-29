@@ -96,6 +96,11 @@ public class KeyPad : MonoBehaviour
             changed = true;
         }
 
+        if (inputList.Count > 4)
+        {
+            ClearSequence();
+        }
+
         OutputText.text = string.Join("", inputList.Select(x => x.First()));
         if (cp.IsValid)
         {
