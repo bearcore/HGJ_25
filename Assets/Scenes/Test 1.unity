@@ -896,10 +896,14 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 9b29829648d9944f5b8b2bb79e7977cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3a84689a3f731411989c7e82c4f74328, type: 2}
+      objectReference: {fileID: 2100000, guid: eb8034c0f651146a1acfacec68949a30, type: 2}
     - target: {fileID: 919132149155446097, guid: 9b29829648d9944f5b8b2bb79e7977cf, type: 3}
       propertyPath: m_Name
       value: Poller (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b29829648d9944f5b8b2bb79e7977cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13841,6 +13845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poller (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b29829648d9944f5b8b2bb79e7977cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19239,7 +19247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &479345331
 Animator:
   serializedVersion: 7
